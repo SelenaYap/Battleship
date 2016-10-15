@@ -7,9 +7,6 @@ using System.Diagnostics;
 using SwinGameSDK;
 
 
-
-
-
 /// <summary>
 /// The DeploymentController controls the players actions
 /// during the deployment phase.
@@ -18,9 +15,6 @@ using SwinGameSDK;
 static class DeploymentController
 {
 
-
-
-{
     private const int SHIPS_TOP = 98;
 	private const int SHIPS_LEFT = 20;
 	private const int SHIPS_HEIGHT = 90;

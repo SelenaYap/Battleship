@@ -6,13 +6,12 @@ using System.Collections.Generic;
 
 using System.Diagnostics;
 using SwinGameSDK;
-using DeploymentController;
+
 
 /// <summary>
 /// The battle phase is handled by the DiscoveryController.
 /// </summary>
-namespace DiscoveryController
-{
+
 
 static class DiscoveryController
 {
@@ -83,7 +82,7 @@ static class DiscoveryController
 
 }
 
-}
+
 //=======================================================
 //Service provided by Telerik (www.telerik.com)
 //Conversion powered by NRefactory.
