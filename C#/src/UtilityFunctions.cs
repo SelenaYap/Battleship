@@ -3,7 +3,8 @@ using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data;
+using SwinGameSDK;
+
 using System.Diagnostics;
 /// <summary>
 /// This includes a number of utility methods for
@@ -133,7 +134,7 @@ static class UtilityFunctions
 
 				draw = true;
 
-				switch (grid.Item(row, col)) {
+				switch (grid[row, col]) {
 					case TileView.Ship:
 						draw = false;
 						break;
@@ -151,7 +152,6 @@ static class UtilityFunctions
 							fillColor = LARGE_HIT;
 						break;
 					case TileView.Sea:
-					case TileView.Ship:
 						if (small)
 							fillColor = SMALL_SEA;
 						else
@@ -287,7 +287,7 @@ static class UtilityFunctions
 		List<Sprite> ended = new List<Sprite>();
 		foreach (Sprite s in _Animations) {
 			SwinGame.UpdateSprite(s);
-			if (s.animationHasEnded) {
+			if (s.AnimationHasEnded) {
 				ended.Add(s);
 			}
 		}
